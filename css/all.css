@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+*{
+    /* outline: 1px solid #000000; */
+}
+
+
+
+.socialMediaFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.socialMediaFlex li{
+    width: 2%;
+    padding-left: 10px;
+}
+
+@media(max-width: 768px){
+    .socialMediaFlex{
+        display: none;
+    }
+}
+.header{
+    background: gray;%
+}
+
+.indexFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+
+
+
+.indexFlex a{
+    display: block;
+    padding: 30px 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Papyrus;
+    text-decoration: none;
+}
+
+.indexFlex a:hover{
+    color: orange;
+    border-bottom: 1px dotted orange;
+    padding-bottom: 5px;   
+}
+
+@media(max-width: 768px){
+    .navbar{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: gray;
+    }
+
+    .navbarHome, .navbarContact{
+        display: none;
+    }
+
+
+}
+
+.name{
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Papyrus;
+    padding-top: 100px;
+    line-height: 1.5;
+}
+
+@media(max-width: 768px){
+    .name{
+        padding-top: 200px;
+    }
+}
+
+
+@media(max-width: 360px){
+    .name{
+        font-size: 40px;;
+    }
+}
+
+.subtitle{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Papyrus;
+}
+
+.more{
+    color: #ffffff;
+    text-align: center;
+    font-family: Papyrus;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.down{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.content{
+    max-width: 1000px;
+    margin: 5% auto;
+    border: 1px solid 8E8E8E;
+    background: linear-gradient(#7B7B7B,#8E8E8E, #BEBEBE, #8E8E8E,#7B7B7B);
+    
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+}
+
+.aboutMe li{
+    width: 50%;
+}
+
+@media(max-width: 768px){
+    .aboutMe li{
+        width: 100%;
+    }
+
+    .aboutMe p{
+        margin: 30px 0;
+    }
+}
+
+.aboutMe img{
+    border-radius: 2000px;
+    box-shadow: 10px 10px 10px gray;
+
+}
+
+.skillFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skillFlex li{
+    width: 20%;
+}
+
+@media(max-width: 768px){
+    .skillFlex li{
+        width: 33.33333%;
+    }
+}
+
+@media(max-width: 360px){
+    .skillFlex li{
+        width: 100%;
+    }
+}
+
+.title h2{
+    color: #000;
+    font-family: Papyrus;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+p{
+    font-family: Papyrus;
+    color: #ffffff;
+    line-height: 2.0;
+    padding: 0 25px;
+    margin: 0 10px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact{
+    color: orange;
+}
+
+.backtotop{
+    
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+   
+}
+
+.footer{
+    background: gray;
+}
+
+.footer p{
+    text-align: center;
+    font-family: Papyrus;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
